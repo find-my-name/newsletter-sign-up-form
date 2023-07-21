@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <div class="container">
+      <img
+        class="mobile"
+        src="assets/images/illustration-sign-up-mobile.svg"
+        alt=""
+      />
+      <div class="left">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" />Product discovery
+            and building what matters
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" />Measuring to ensure
+            updates are a success
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" />And much more!
+          </li>
+        </ul>
+        <form id="news-form">
+          <div>
+            <label for="email">Email address</label>
+            <label class="error"></label>
+          </div>
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="email@company.com"
+          />
+          <input
+            class="btn"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+          />
+        </form>
+      </div>
+      <div class="right">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="thanks-msg hidden">
+      <div>
+        <img src="assets/images/icon-success.svg" alt="" />
+        <h1>Thanks for subscribing!</h1>
+        <p class="message"></p>
+      </div>
+      <input class="btn dismiss" type="submit" value="Dismiss message" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
